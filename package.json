@@ -1,0 +1,33 @@
+{
+  "name": "dao-backend",
+  "version": "1.0.0",
+  "description": "DAO project backend",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development --experimental-specifier-resolution=node nodemon",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/dao-backend"
+  },
+  "author": "PB",
+  "license": "ISC",
+  "imports": {
+    "config/*": "./*.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/node": "^7.20.7",
+    "@babel/preset-env": "^7.20.2",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "helmet": "^6.0.1",
+    "nodemon": "^2.0.21"
+  }
+}
